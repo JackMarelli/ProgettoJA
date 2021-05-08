@@ -1,0 +1,19 @@
+PARTECIPANTI:
+Marelli (capogruppo, sviluppatore)
+Cattaneo (vice capogruppo, sviluppatore)
+Marturano (leader, committente)
+Origgi (moderatore, sviluppatore)
+
+NOME DEL PRODOTTO:
+Music From Afar
+
+DESCRIZIONE PROGETTO:
+Il problema è quello di usufruire di una playlist musicale 
+senza necessariamente toccare un dispositivo, per il semplice 
+motivo di non volersi spostare o avendo le mani sporche. 
+Abbiamo trovato la soluzione il un prototipo di dispositivo che dovrebbe 
+rilevare i battiti di mani o altri comandi sonori molto semplici 
+ma offrendo varie funzioni come cambiare canzone, riprodurre casualmente e ovviamente accendere e spegnere la musica.
+
+Es: entro in casa, mani sporche, batto le mani due volte, parte la musica, batto le mani una volta, vado avanti di canzone… 
+Es: sto cucinando, mani unte o bagnate, batto le mani due volte, parte la musica in riproduzione casuale.

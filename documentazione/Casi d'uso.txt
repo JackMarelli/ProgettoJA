@@ -1,0 +1,22 @@
+Caso d'uso 1)
+	Nome: Accensione
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente batte le mani due volte
+		2 Il sistema emette un suono di risposta e accende un led
+		3 Il sistema attiva la scelta della playlist
+		4 L'utente batte le mani da una a tre volte, scegliendo una delle tre playlist preimpostate
+		5 Il sistema fa partire la musica in riproduzione casuale
+Caso d'uso 2)
+	Nome: Cambio canzone
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente batte le mani una volta
+		2 Il sistema cambia canzone in maniera casuale
+Caso d'uso 3)
+	Nome: Spegnimento
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente batte le mani due volte
+		2 Il sistema ferma la musica e spegne il led
+
