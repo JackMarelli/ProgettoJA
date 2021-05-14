@@ -9,12 +9,17 @@ namespace MusicPlayer
 {
     public class player
     {
+
+
         public void playSimpleSound()
         {
             SoundPlayer simpleSound = new SoundPlayer(Properties.Resources.Underwater_Indian_Guy_Meme);
             simpleSound.Play();
         }
 
+        public void playRandomSong()
+        {
+            //scelgo e riproduco canzone random
+        }
     }
-    /*ciao mamma*/
 }
