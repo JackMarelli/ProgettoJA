@@ -5,23 +5,22 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using System.Windows.Forms;
-=======
 using System.Windows.Threading;
 using System.Xml.Linq;
->>>>>>> 3bda98ec553c4aabc6594d86e901159f46753879
 
 namespace MusicPlayer
 {
     public class player
     {
-<<<<<<< HEAD
-
-        
-=======
         SerialPort porta;
-        player()
+        string[] playlist = new string[3] {
+            "Underwater_Indian_Guy_Meme.wav",
+            "levelup.wav",
+            "Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut.net.wav"
+            };
+
+        public player()
         {
             porta = new SerialPort("COM", 9600);
             porta.Open();
@@ -36,16 +35,22 @@ namespace MusicPlayer
 
         public void playRandomSong()
         {
-            //scelgo e riproduco canzone random
+                //estraggo e riproduco canzone random
+                Random rand = new Random();
+                int num = rand.Next(3);
+                MessageBox.Show(num.ToString());
+
+                SoundPlayer simpleSound = new SoundPlayer(@"..\playlist\" + playlist[num]); //cambiare il percorso con assoluto
+                simpleSound.Play();
         }
 
-        private void porta_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        public void porta_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             //LEGGO COSA C'E' NEL BUFFER
             string lettura = porta.ReadExisting();
             if (lettura == "P")
             {
-                //faccio partire canzone casuale
+                playRandomSong();
             }
             else if (lettura == "p")
             {
@@ -56,6 +61,7 @@ namespace MusicPlayer
                 aggiungere poi if che implementano altre funzioni
             }*/
         }
->>>>>>> 3bda98ec553c4aabc6594d86e901159f46753879
+
+
     }
 }
