@@ -84,5 +84,11 @@
   <ItemGroup>
     <None Include="Resources\Underwater Indian Guy Meme.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut.net.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

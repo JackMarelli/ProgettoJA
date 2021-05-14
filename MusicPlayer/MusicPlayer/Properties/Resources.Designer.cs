@@ -63,6 +63,24 @@ namespace MusicPlayer.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream levelup {
+            get {
+                return ResourceManager.GetStream("levelup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut_net {
+            get {
+                return ResourceManager.GetStream("Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut_net", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.IO.UnmanagedMemoryStream simile a System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Underwater_Indian_Guy_Meme {
             get {
                 return ResourceManager.GetStream("Underwater_Indian_Guy_Meme", resourceCulture);

@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="levelup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\levelup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut.net.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Underwater_Indian_Guy_Meme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Underwater Indian Guy Meme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
