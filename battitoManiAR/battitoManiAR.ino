@@ -4,8 +4,8 @@
 
 int soglia = 65;
 int cont = 0;
-int azzera = 200;
 bool stato = 0;
+int calc = 0;
 
 
 void setup() {
@@ -14,24 +14,8 @@ void setup() {
 
 }
 
-void loop() {
-
-  if(analogRead(mic)>soglia){
-    cont++;
-    delay(del);
-  }
-  
-  if(azzera == 0){
-    azzera = 100;
-    cont = 0;
-  }
-
-  if(cont == 2 ){
-    azzera = 100;
-    stato = !stato;
-    cont = 0;
-  }
-
+void controlla()
+{
   if(stato = 0)
   {
   Serial.print("p"); //spegne 
@@ -39,9 +23,49 @@ void loop() {
   if(stato = 1)
   {
     Serial.print("P"); //accende
+    calc = 2;
+  }
+}
+
+void cambioCanzone(){
+  cont = 0;
+  if(analogRead(mic)>soglia){
+    cont++;
+    delay(del);
   }
   
+  if(cont == 3 ){
+    Serial.print("C");
+    cont = 0;
   }
-azzera--;
+  if(cont == 4 ){
+    Serial.print("p");
+    calc = 0;
+  }
+}
 
+void loop() {
+if(calc == 0){
+  
+  if(Serial.available()){
+    if(Serial.read() == 'w'){
+      controlla();
+    }
+  }
+
+    if(analogRead(mic)>soglia){
+    cont++;
+    delay(del);
+    }
+  if(cont == 2 ){
+    stato = !stato;
+    cont = 0;
+  }
+
+  
+}
+   if(calc == 2){
+    cambioCanzone();
+   }
+   
 }
