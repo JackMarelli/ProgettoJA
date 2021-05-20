@@ -33,14 +33,9 @@ namespace MusicPlayer
             p.playSimpleSound();
         }
 
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        private void buttonRand_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            p.playRandomSong(textBox1);
+            p.playRandomSong();
         }
     }
 }

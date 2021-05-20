@@ -15,6 +15,7 @@ namespace MusicPlayer
     public class player
     {
         SerialPort porta;
+        SoundPlayer p = new SoundPlayer();
         string[] playlist = new string[3] {
             "Underwater_Indian_Guy_Meme.wav",
             "levelup.wav",
@@ -34,16 +35,13 @@ namespace MusicPlayer
             simpleSound.Play();
         }
 
-        public void playRandomSong(TextBox t)
+        public void playRandomSong()
         {
                 //estraggo e riproduco canzone random
                 Random rand = new Random();
                 int num = rand.Next(3);
-                MessageBox.Show(num.ToString());
-                
                 string songpath = Directory.GetCurrentDirectory() + @"\..\..\playlist\" + playlist[num];
-                MessageBox.Show(songpath);
-                t.Text = songpath;
+                MessageBox.Show("Canzone in posizione: " + num.ToString() + " \nPath: "  + songpath);
                 SoundPlayer randsong = new SoundPlayer(songpath); //cambiare il percorso con assoluto
                 //randsong.Play();
         }
@@ -54,16 +52,14 @@ namespace MusicPlayer
             string lettura = porta.ReadExisting();
             if (lettura == "P")
             {
-                //playRandomSong();
+                playRandomSong();
             }
             else if (lettura == "p")
             {
                 //interrompo riproduzione
+                p.Stop();
             }
-            /*else if (lettura == "")
-            {
-                aggiungere poi if che implementano altre funzioni
-            }*/
+            // ... altre funzioni ...
         }
 
 

@@ -1,4 +1,6 @@
-﻿namespace MusicPlayer
+﻿using System;
+
+namespace MusicPlayer
 {
     partial class MusicPlayer
     {
@@ -33,7 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl1 = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonRand = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,15 +85,15 @@
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button1
+            // buttonRand
             // 
-            this.button1.Location = new System.Drawing.Point(113, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 47);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "random song";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonRand.Location = new System.Drawing.Point(113, 123);
+            this.buttonRand.Name = "buttonRand";
+            this.buttonRand.Size = new System.Drawing.Size(75, 47);
+            this.buttonRand.TabIndex = 2;
+            this.buttonRand.Text = "random song";
+            this.buttonRand.UseVisualStyleBackColor = true;
+            this.buttonRand.Click += new System.EventHandler(this.buttonRand_Click);
             // 
             // textBox1
             // 
@@ -107,7 +109,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(310, 252);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonRand);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -129,7 +131,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button btnTest;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonRand;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
