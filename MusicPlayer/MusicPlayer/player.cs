@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.IO.Ports;
 using System.Linq;
 using System.Media;
@@ -22,9 +23,9 @@ namespace MusicPlayer
 
         public player()
         {
-            porta = new SerialPort("COM", 9600);
-            porta.Open();
-            porta.DataReceived += porta_DataReceived;
+            //porta = new SerialPort("COM", 9600);
+            //porta.Open();
+            //porta.DataReceived += porta_DataReceived;
         }
 
         public void playSimpleSound()
@@ -33,15 +34,18 @@ namespace MusicPlayer
             simpleSound.Play();
         }
 
-        public void playRandomSong()
+        public void playRandomSong(TextBox t)
         {
                 //estraggo e riproduco canzone random
                 Random rand = new Random();
                 int num = rand.Next(3);
                 MessageBox.Show(num.ToString());
-
-                SoundPlayer simpleSound = new SoundPlayer(@"..\playlist\" + playlist[num]); //cambiare il percorso con assoluto
-                simpleSound.Play();
+                
+                string songpath = Directory.GetCurrentDirectory() + @"\..\..\playlist\" + playlist[num];
+                MessageBox.Show(songpath);
+                t.Text = songpath;
+                SoundPlayer randsong = new SoundPlayer(songpath); //cambiare il percorso con assoluto
+                //randsong.Play();
         }
 
         public void porta_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -50,7 +54,7 @@ namespace MusicPlayer
             string lettura = porta.ReadExisting();
             if (lettura == "P")
             {
-                playRandomSong();
+                //playRandomSong();
             }
             else if (lettura == "p")
             {
