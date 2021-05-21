@@ -21,12 +21,15 @@ namespace MusicPlayer
             "levelup.wav",
             "Parmareggio_sara_perche_ti_amo_spot_pubblicita_2019_mp3cut.net.wav"
             };
+        string current;
 
         public player()
         {
+
             //porta = new SerialPort("COM", 9600);
             //porta.Open();
             //porta.DataReceived += porta_DataReceived;
+            current = "";
         }
 
         public void playSimpleSound()
@@ -38,12 +41,30 @@ namespace MusicPlayer
         public void playRandomSong()
         {
                 //estraggo e riproduco canzone random
-                Random rand = new Random();
+                Random rand = new Random(); //numero random
                 int num = rand.Next(3);
-                string songpath = Directory.GetCurrentDirectory() + @"\..\..\playlist\" + playlist[num];
+                current = playlist[num];
+                string songpath = (Directory.GetCurrentDirectory() + @"\..\..\playlist\" + current);
                 MessageBox.Show("Canzone in posizione: " + num.ToString() + " \nPath: "  + songpath);
                 SoundPlayer randsong = new SoundPlayer(songpath); //cambiare il percorso con assoluto
-                //randsong.Play();
+                randsong.Play();
+        }
+
+        public void changeSong()
+        {
+            //estraggo e riproduco canzone random SE non è uguale a quella che sta già riproducendo
+            Random rand = new Random(); //numero random
+            int num = rand.Next(3);
+
+            while (playlist[num] == current) { //controllo se non è uguale a quella che sta già riproducendo
+                int newnum = rand.Next(3); 
+            }
+
+            string songpath = (Directory.GetCurrentDirectory() + @"\..\..\playlist\" + current);
+            MessageBox.Show("Canzone in posizione: " + num.ToString() + " \nPath: " + songpath);
+            SoundPlayer randsong = new SoundPlayer(songpath);
+            randsong.Play();
+
         }
 
         public void porta_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -58,6 +79,10 @@ namespace MusicPlayer
             {
                 //interrompo riproduzione
                 p.Stop();
+            }
+            else if (lettura == "c"){
+                //cambio canzone
+                changeSong();
             }
             // ... altre funzioni ...
         }
