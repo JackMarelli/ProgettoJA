@@ -2,7 +2,7 @@
 Repository del progetto Music From Afar in contemporanea ai corsi di JA Italia
 
 
-# COntenuto della repository
+# Contenuto della repository
 - Il progetto di Arduino IDE per la gestione del dispositivo
 hardware Arduino UNO Elegoo, che rileva i battiti di mani e
 invia i segnali al progetto C#
