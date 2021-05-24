@@ -69,7 +69,7 @@ namespace MusicPlayer
 
         public void porta_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            //LEGGO COSA C'E' NEL BUFFER
+            //leggo cosa c'è nel buffer
             string lettura = porta.ReadExisting();
             if (lettura == "P")
             {
