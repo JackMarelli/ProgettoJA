@@ -14,5 +14,5 @@ in se con la scelta randomica della canzone da una playlist,
 sempre contenuta in questa repository
 
 # Trello
-[Vai alla bacheca Trello del progetto](https://trello.com/b/PKU89Ezb/idee-in-azione)
+[Vai alla bacheca Trello del progetto](https://trello.com/b/PKU89Ezb/idee-in-azione)  
 CTRL + Click sul link per aprirlo in un'altra pagina, altrimenti sostituirà questa pagina.
