@@ -14,5 +14,4 @@ in se con la scelta randomica della canzone da una playlist,
 sempre contenuta in questa repository
 
 #Trello
-
-[I'm an inline-style link](https://www.google.com)
+[Vai alla bacheca Trello del progetto](https://trello.com/b/PKU89Ezb/idee-in-azione)
