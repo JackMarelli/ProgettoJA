@@ -1,4 +1,4 @@
-# ProgettoJA
+# Progetto JA - Music From Afar
 Repository del progetto Music From Afar in contemporanea ai corsi di JA Italia
 
 
