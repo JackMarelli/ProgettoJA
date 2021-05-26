@@ -13,5 +13,5 @@ dal programma in Arduino e gestisce il Music Player
 in se con la scelta randomica della canzone da una playlist,
 sempre contenuta in questa repository
 
-#Trello
-[Vai alla bacheca Trello del progetto](https://trello.com/b/PKU89Ezb/idee-in-azione)
+# Trello
+[Vai alla bacheca Trello del progetto](https://trello.com/b/PKU89Ezb/idee-in-azione){:target="_blank" rel="noopener"}
